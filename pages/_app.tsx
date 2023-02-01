@@ -7,6 +7,9 @@ import { ThemeProvider } from 'next-themes';
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+    <ThemeProvider enableSystem={true} attribute="class">
+      <Component {...pageProps} />
+      </ThemeProvider>
       {process.env.NEXT_PUBLIC_UMAMI_ID &&
         process.env.NEXT_PUBLIC_UMAMI_URL &&
         process.env.NODE_ENV === 'production' && (
@@ -17,9 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
         )}
       <Toaster />
       <Component {...pageProps} />;
-      <ThemeProvider enableSystem={true} attribute="class">
-      <Component {...pageProps} />
-      </ThemeProvider>
+      
     </>
   );
 }

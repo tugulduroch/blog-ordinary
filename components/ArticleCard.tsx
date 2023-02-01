@@ -1,7 +1,6 @@
 import { Article } from 'utils/types';
 import slugify from 'slugify';
 import getLocalizedDate from 'utils/getLocalizedDate';
-
 type Props = {
   article: Article;
 };
