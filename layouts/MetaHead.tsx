@@ -14,7 +14,10 @@ export function MetaHead(props) {
       <meta property="og:site_name" content={siteData.author} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={siteData.title} />
-      <meta property="og:image" content={imageUrl || siteData.socialBanner} />
+
+      <link rel="icon" href="images/fav.svg" />
+      <link rel="icon" type="image/svg" sizes="32x32" href="/images/fav-32x32.svg"/>
+      <link rel="icon" type="image/svg" sizes="16x16" href="/images/fav-16x16.svg"/>
 
       <meta property="og:url" content={ogUrl} />
       <meta property="og:type" content="website" />
