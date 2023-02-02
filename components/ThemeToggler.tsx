@@ -9,16 +9,15 @@ const ThemeToggler = () => {
   if (!mounted) return null;
   return (
 
-//TODO https://www.youtube.com/watch?v=1q5oOZE6o4c&ab_channel=AlterClass
     <button
-      className="w-20 h-6 bg-blue-100 mr-5 rounded-md dark:bg-slate-700 flex items-center justify-center hover:ring-2 ring-blue-400 transition-all duration-300 focus:outline-none"
+      className="w-20 h-6 bg-slate-200 dark:bg-slate-800 mr-5 rounded-md flex items-center justify-center hover:ring-2 ring-blue-400 transition-all duration-300 focus:outline-none"
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       aria-label="Toggle Dark Mode"
     >
       {theme === 'light' ? (
-        <MoonIcon className="text-blue-500 w-5 h-5" />
+        <MoonIcon className="text-slate-800 w-5 h-5" />
       ) : (
-        <SunIcon className="text-blue-400 w-5 h-5" />
+        <SunIcon className="text-sky-500 w-5 h-5" />
       )}
     </button>
   );

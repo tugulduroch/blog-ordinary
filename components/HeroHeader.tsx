@@ -3,7 +3,7 @@ import Container from './Container';
 
 export default function HeroHeader() {
   return (
-    <div className="py-24 text-center bg-gray-100">
+    <div className="py-24 text-center bg-gray-100 border-b dark:border-slate-800 dark:bg-slate-900  dark:text-gray-100">
       <Container>
         {siteData?.profileUrl && (
           <img
@@ -12,10 +12,10 @@ export default function HeroHeader() {
             alt="profile"
           />        
           )}
-        <div className="mt-4 text-3xl font-extrabold text-gray-900">
+        <div className="mt-4 text-3xl font-extrabold text-gray-900 dark:text-gray-100">
           {siteData.headerTitle}
         </div>
-        <div className="max-w-2xl mx-auto mt-2 text-xl text-gray-500">
+        <div className="max-w-2xl mx-auto mt-2 text-xl text-gray-500 dark:text-gray-100">
           {siteData.headerDescription}
         </div>
       </Container>

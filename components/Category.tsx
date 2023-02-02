@@ -12,7 +12,7 @@ export default function Category({ setSelectedTag, tag, selectedTag }) {
       onClick={() => handleTagClick(tag)}
       className={`${
         selectedTag === tag && 'ring-2 ring-gray-400 text-gray-700'
-      } inline-flex items-center px-3 py-1.5 uppercase bg-gray-100 rounded cursor-pointer`}
+      } inline-flex items-center px-6 py-1.5 uppercase bg-gray-200 rounded cursor-pointer dark:text-gray-100 dark:bg-gray-800 `}
     >
       <span className="text-xs font-medium uppercase">{tag || 'All'}</span>
     </div>

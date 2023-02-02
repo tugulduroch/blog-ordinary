@@ -25,7 +25,7 @@ const socials = [
 
 export default function Socials() {
   return (
-    <div className="flex justify-center space-x-6 md:order-2">
+    <div className="flex justify-center space-x-6 md:order-2 ">
       {socials.map(item => (
         <a
           key={item.name}
@@ -34,8 +34,8 @@ export default function Socials() {
           target="_blank"
           rel="noreferrer"
         >
-          <span className="sr-only">{item.name}</span>
-          <UseAnimations animation={item.animation} strokeColor="#333" />
+          <span className="sr-only ">{item.name}</span>
+          <UseAnimations animation={item.animation} strokeColor="#0e7490"/>
         </a>
       ))}
     </div>

@@ -35,15 +35,15 @@ const ArticlePage = ({
         ogUrl={`/blog/${slug}`}
       >
         <div>
-          <div className="px-6 py-16 pb-48 mx-auto -mb-48 text-center bg-gray-100 md:pb-96 md:-mb-96">
+          <div className="px-6 py-16 pb-48 mx-auto -mb-48 text-center bg-gray-100 md:pb-96 md:-mb-96 dark:bg-gray-900">
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center justify-center mb-2 space-x-2 text-sm text-gray-500">
                 <div className="">{publishedOn}</div>
               </div>
-              <div className="font-extrabold tracking-tight text-gray-900 text-w-4xl sm:text-4xl">
+              <div className="font-extrabold tracking-tight text-gray-900 dark:text-gray-100 text-w-4xl sm:text-4xl">
                 {title}
               </div>
-              <div className="max-w-3xl mx-auto mt-3 text-xl leading-8 text-gray-500 sm:mt-4">
+              <div className="max-w-3xl mx-auto mt-3 text-xl leading-8 text-gray-500 dark:text-gray-400 sm:mt-4">
                 {summary}
               </div>
             </div>

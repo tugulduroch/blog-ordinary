@@ -14,7 +14,7 @@ export default function Index({ articles, categories }) {
   return (
     <Layout>
       <HeroHeader />
-      <div className="flex flex-wrap justify-center gap-4 mt-8">
+      <div className="flex flex-wrap justify-center gap-4 pt-8  dark:bg-slate-900">
         {categories.map(tag => (
           <Category
             tag={tag}
@@ -25,8 +25,8 @@ export default function Index({ articles, categories }) {
         ))}
       </div>
       <Container>
-        <div className="py-8">
-          <div className="my-8 text-3xl font-bold text-gray-900">
+        <div>
+          <div className="my-8 text-3xl font-bold text-gray-900 dark:text-gray-100 ">
             {!selectedTag ? 'Сүүлд нийтэлсэн' : `${selectedTag} articles`}
           </div>
           <ArticleList articles={filteredArticles} />
