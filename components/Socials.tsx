@@ -36,6 +36,7 @@ export default function Socials() {
         >
           <span className="sr-only ">{item.name}</span>
           <UseAnimations animation={item.animation} strokeColor="#0e7490"/>
+          // SVG strokeColor change to dark mode
         </a>
       ))}
     </div>
