@@ -32,7 +32,7 @@ export default function ArticleCard({ article }: Props) {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-between flex-1 py-4 bg-white dark:bg-slate-900">
+        <div className="flex flex-col justify-between flex-1 py-4 rounded-b-lg bg-white dark:bg-slate-900">
           <div className="flex-1">
             <p className="text-xl font-bold text-gray-900 dark:text-gray-100">{article.title}</p>
             <p className="mt-3 text-base font-normal  text-gray-500 line-clamp-2 dark:text-gray-300">{article.summary}</p>

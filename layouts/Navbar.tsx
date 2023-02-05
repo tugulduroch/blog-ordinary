@@ -12,9 +12,9 @@ export default function Navbar() {
           <Link href="/" passHref>
             <div className="justify-start text-xl font-bold cursor-pointer dark:text-gray-100">{siteData.author}</div>
           </Link>
-            <div className='flex justify-end'>
-            <Socials />
+            <div className='flex justify-end '>
             <ThemeToggler />
+            <Socials />
             </div>
         </div>
         

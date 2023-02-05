@@ -9,6 +9,10 @@
         @apply min-h-screen
     }
 
+    html {
+        font-family: 'Open Sans', system-ui, sans-serif;
+      }
+
     ::selection {
         @apply text-white bg-blue-600;
     }

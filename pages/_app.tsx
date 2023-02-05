@@ -10,7 +10,6 @@ export default function App({ Component, pageProps }: AppProps) {
     <ThemeProvider enableSystem={true} attribute="class">
       <Component {...pageProps} />
       </ThemeProvider>
-      // ThemeProvider duplicated error;
       {process.env.NEXT_PUBLIC_UMAMI_ID &&
         process.env.NEXT_PUBLIC_UMAMI_URL &&
         process.env.NODE_ENV === 'production' && (
@@ -20,9 +19,6 @@ export default function App({ Component, pageProps }: AppProps) {
           />
         )}
       <Toaster />
-      <Component {...pageProps} />;
-      
-      
     </>
   );
 }

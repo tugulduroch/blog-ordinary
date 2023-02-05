@@ -14,7 +14,7 @@ export default function Index({ articles, categories }) {
   return (
     <Layout>
       <HeroHeader />
-      <div className="flex flex-wrap justify-center gap-4 pt-8  dark:bg-slate-900">
+      <div className="flex flex-wrap justify-center gap-4 pt-8  dark:bg-slate-900 ">
         {categories.map(tag => (
           <Category
             tag={tag}

@@ -111,7 +111,7 @@ export default function CodeBlock({ code, language, metaString, caption }: Props
               style={style}
             >
               <div className="relative flex text-xs leading-6 ">
-                <div className="flex items-center flex-none px-4 py-1 mt-2 text-sm text-teal-400 border-t border-b border-t-transparent border-b-teal-400">
+                <div className="flex items-center flex-none px-4 py-1 mt-2 text-sm text-teal-400 border-t border-b border-t-transparent border-b-teal-400 ">
                   {caption || JSON.stringify(language).replace(/['"]+/g, '')}{' '}
                 </div>
                 <div className="flex flex-auto pt-2 overflow-hidden rounded-tr-xl">

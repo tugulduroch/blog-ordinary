@@ -9,6 +9,7 @@ import Container from 'components/Container';
 import slugify from 'slugify';
 import ArticleList from 'components/ArticleList';
 import siteData from 'data/siteData';
+import pocket from 'react-useanimations/lib/pocket';
 
 const ArticlePage = ({
   content,
@@ -57,15 +58,15 @@ const ArticlePage = ({
               <Fragment key={block.id}>{renderBlocks(block)}</Fragment>
             ))}
           </div>
-          <div className="py-12 border-t">
+          <div className="py-12 border-t dark:border-slate-800">
             <Container>
               <div className="flex items-center justify-between my-8">
-                <div className="text-3xl font-bold text-gray-900">Бусад нийтлэлүүд</div>
-                <Link href="/">
-                  <span className="font-semibold text-gray-900 cursor-pointer">
-                    Дэлгэрэнгүй ➜
+                <div className="text-3xl font-bold text-gray-900 dark:text-gray-100">Бусад нийтлэлүүд</div>
+                {/* <Link href="/">
+                  <span className="text-sm text-gray-900 cursor-pointer dark:text-gray-100">
+                    Дэлгэрэнгүй 
                   </span>
-                </Link>
+                </Link> */}
               </div>
               <ArticleList articles={moreArticles} />
             </Container>
