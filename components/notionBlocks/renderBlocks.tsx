@@ -13,7 +13,7 @@ export function renderBlocks(block) {
   switch (type) {
     case 'paragraph':
       return (
-        <p className="leading-[28px] text-lg">
+        <p className="leading-[28px] text-base dark:text-gray-300">
           <Text text={value.text} />
         </p>
       );
@@ -84,12 +84,12 @@ export function renderBlocks(block) {
       return (
         <figure className="mt-0">
           <img
-            className="rounded-lg aspect-video"
+            className="rounded-lg"
             src={src}
-            placeholder="blur"
-            alt={caption ? caption : 'A visual depiction of what is being written about'}
+            placeholder="placeholder"
+            alt={caption ? caption : 'Caption'}
           />
-          {caption && <figcaption className="text-center">{caption}</figcaption>}
+          {caption && <figcaption className="text-center mt-2 text-gray-400">{caption}</figcaption>}
         </figure>
       );
     case 'code':
@@ -115,7 +115,7 @@ export function renderBlocks(block) {
       return <YoutubeEmbed url={value?.external?.url || ''} />;
     case 'quote':
       return (
-        <blockquote className="p-4 rounded-r-lg bg-gray-50">
+        <blockquote className="p-6 rounded-lg font-semibold bg-gray-200 dark:bg-slate-800">
           <Text text={value.text} />
         </blockquote>
       );

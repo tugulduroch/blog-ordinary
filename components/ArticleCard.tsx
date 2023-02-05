@@ -18,7 +18,7 @@ export default function ArticleCard({ article }: Props) {
             {article?.categories?.map(category => (
               <div
                 key={category}
-                className="relative shadow z-[2] inline-flex items-center px-6 py-1.5 text-xs font-medium mb-2 mr-2 text-gray-600 uppercase bg-gray-100 rounded left-3 top-3 dark:bg-gray-800 dark:text-gray-100"
+                className="relative shadow z-[2] inline-flex items-center px-6 py-1.5 text-xs font-medium mb-2 mr-2 text-gray-600 bg-gray-100 rounded left-3 top-3 dark:bg-gray-800 dark:text-gray-100"
               >
                 {category}
               </div>
