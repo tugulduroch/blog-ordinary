@@ -27,7 +27,7 @@ export default function Index({ articles, categories }) {
       <Container>
         <div>
           <div className="my-8 text-3xl font-bold text-gray-900 dark:text-gray-100 ">
-            {!selectedTag ? 'Сүүлд нийтэлсэн' : `${selectedTag} articles`}
+            {!selectedTag ? 'Сүүлд нийтэлсэн' : `${selectedTag}`}
           </div>
           <ArticleList articles={filteredArticles} />
         </div>
