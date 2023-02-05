@@ -9,7 +9,8 @@ const siteData = {
   github: 'https://github.com/tugulduroch',
   facebook: 'https://www.facebook.com/Tugulduroch',
   websiteUrl: 'https://tugulduruu.com/',
-  linkedin: 'https://www.linkedin.com/in/tugulduroch/'
+  linkedin: 'https://www.linkedin.com/in/tugulduroch/',
+  path: ''
 };
 
 
