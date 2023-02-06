@@ -53,7 +53,7 @@ const ArticlePage = ({
           <div className="max-w-5xl px-6 mx-auto my-10 md:px-8">
             <img className="object-cover w-full rounded-xl aspect-video" src={coverImage} />
           </div>
-          <div className="max-w-4xl px-6 mx-auto mb-24 space-y-8 md:px-8 text-justify">
+          <div className="max-w-4xl px-6 mx-auto mb-24 space-y-8 md:px-8 font-regular font-sans ">
             {content.map(block => (
               <Fragment key={block.id}>{renderBlocks(block)}</Fragment>
             ))}

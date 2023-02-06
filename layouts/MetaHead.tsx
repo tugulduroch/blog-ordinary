@@ -9,15 +9,16 @@ export function MetaHead(props) {
   return (
     <Head>
       <title>{titleName}</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+      <link rel="manifest" href="/site.webmanifest"/>
+
       <meta name="robots" content="follow, index" />
       <meta content={description || titleName} name="description" />
       <meta property="og:site_name" content={siteData.author} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={siteData.title} />
-
-      <link rel="icon" href="images/fav.svg" />
-      <link rel="icon" type="image/svg" sizes="32x32" href="/images/fav-32x32.svg"/>
-      <link rel="icon" type="image/svg" sizes="16x16" href="/images/fav-16x16.svg"/>
 
       <meta property="og:url" content={ogUrl} />
       <meta property="og:type" content="website" />
