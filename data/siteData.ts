@@ -1,7 +1,7 @@
 const siteData = {
   title: 'Ordinary - Blog',
   author: 'Ordinary',
-  headerTitle: 'Articles and some random stuffs',
+  headerTitle: 'Articles n some random stuffs',
   profileUrl: '/nextjs-logo.png',
   headerDescription: `I'm Tuguldur who writes down my own thoughts and suggest some jams.`,
   footerText: '© 2023 - Tugulduruu.com',
