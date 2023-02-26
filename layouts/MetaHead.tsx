@@ -17,8 +17,12 @@ export function MetaHead(props) {
       <meta name="robots" content="follow, index" />
       <meta content={description || titleName} name="description" />
       <meta property="og:site_name" content={siteData.author} />
-      <meta property="og:description" content={description} />
       <meta property="og:title" content={siteData.title} />
+      <meta property="og:image" content=""/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://www.tugulduruu.com/" />
+      <meta name="description" content="I'm Tuguldur who writes down my own thoughts and suggest some jams." />
+
 
       <meta property="og:url" content={ogUrl} />
       <meta property="og:type" content="website" />
