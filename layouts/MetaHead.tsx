@@ -19,10 +19,12 @@ export function MetaHead(props) {
       <meta property="og:site_name" content={siteData.author} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={siteData.title} />
-      <meta property="og:image" content={imageUrl}/>
-      <meta property="og:type" content="website"/>
+
       <meta property="og:url" content={ogUrl} />
+      <meta property="og:type" content="website" />
       <meta property="og:title" content={titleName} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={imageUrl} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content={siteData.websiteUrl} />
