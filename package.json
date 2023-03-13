@@ -22,6 +22,8 @@
     "canvas-confetti": "^1.5.1",
     "chrome-aws-lambda": "^10.1.0",
     "copy-to-clipboard": "^3.3.2",
+    "lottie-react": "^2.4.0",
+    "lottie-web": "^5.10.2",
     "next": "^12.2.4",
     "next-api-og-image": "^4.3.0",
     "next-superjson": "^0.0.4",
